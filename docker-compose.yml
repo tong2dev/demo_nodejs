@@ -1,0 +1,13 @@
+version: '3.3'
+
+services:
+  node:
+    build: ./node
+    restart: always
+    container_name: node
+    working_dir: /usr/src/app/node
+    ports:
+      - 3456:3000
+    environment:
+        - PORT=3000
+    command: npm start
