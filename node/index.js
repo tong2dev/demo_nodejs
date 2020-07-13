@@ -5,7 +5,7 @@ const app = express()
 
 app.get("/", (req, res) => {
   //const date_now = moment().tz('Asia/Bangkok').format('DD-MM-YYYY HH:mm:ss')
-  res.send({'code':200,'message':"Service Node",'time2':moment().format('DD-MM-YYYY HH:mm:ss')});
+  res.send({'code':300,'message':"Service Node",'time2':moment().format('DD-MM-YYYY HH:mm:ss')});
 });
 
 app.listen(process.env.PORT,()=>{
