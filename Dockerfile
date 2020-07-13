@@ -8,6 +8,6 @@ RUN apt-get update && apt-get dist-upgrade -y \
 COPY . /apps/
 WORKDIR /apps/
 RUN npm install
-EXPOSE 4000
+EXPOSE 5555
 #run command
 CMD ["npm","start"]
